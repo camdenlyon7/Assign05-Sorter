@@ -2,7 +2,12 @@ package assign05;
 
 import java.util.ArrayList;
 import java.util.Random;
-
+/**
+ * A PivotChooser subclass that chooses randomly from the set 
+ * @param <E> the object type that makes up ArrayList being sorted
+ * @authors Camden Lyon & Ibrahim Alasady
+ * @version 2026-10-01
+ */
 public class RandomPivotChooser<E extends Comparable<? super E>> implements PivotChooser<E> {
   private Random rand;
 
