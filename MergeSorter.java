@@ -5,6 +5,8 @@ import java.util.ArrayList;
 /**
  * A Sorter subclass that uses mergesort up until the provided threshold then uses insertion sort
  * @param <E> the object type that makes up ArrayList being sorted
+ * @authors Camden Lyon & Ibrahim Alasady
+ * @version 2026-10-01
  */
 public class MergeSorter <E extends Comparable<? super E>> implements Sorter<E> {
 	private int threshold;
@@ -33,9 +35,9 @@ public class MergeSorter <E extends Comparable<? super E>> implements Sorter<E> 
 	/**
 	 * A private recursive method that mergesorts the input list
 	 * @param list, the ArrayList to sort
-	 * @param temp, the ArrayList
-	 * @param first
-	 * @param last
+	 * @param temp, the temp ArrayList to sort in before copying back to list
+	 * @param first, the index to start sorting from
+	 * @param last, the index to stop sorting at
 	 */
 	private void mergeSort(ArrayList<E> list, ArrayList<E> temp, int first, int last) {
         int length = last - first + 1;
@@ -54,11 +56,11 @@ public class MergeSorter <E extends Comparable<? super E>> implements Sorter<E> 
 	
 	/**
 	 * A private helper method that merges
-	 * @param list
-	 * @param temp
-	 * @param first
-	 * @param mid
-	 * @param last
+	 * @param list, the ArrayList to sort
+	 * @param temp, the temp ArrayList to sort in before copying back to list
+	 * @param first, the index to start at
+	 * @param mid, the middle index
+	 * @param last, the index to stop at
 	 */
 	private void merge(ArrayList<E> list, ArrayList<E> temp, int first, int mid, int last) {
         int left = first;
