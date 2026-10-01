@@ -56,7 +56,7 @@ public class QuickSorter<E extends Comparable<? super E>> implements sorter<E> {
         int storeIndex = left;
 
         for (int i = left; i < right; i++) {
-            if (list.get(i).compareTo(pivotValue) < = 0) {
+            if (list.get(i).compareTo(pivotValue) <= 0) {
                 swap(list, i, storeIndex);
                 storeIndex++;
             }
