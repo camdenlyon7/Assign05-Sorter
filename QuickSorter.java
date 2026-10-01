@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @authors Camden Lyon & Ibrahim Alasady
  * @version 2026-10-01
  */
-public class QuickSorter<E extends Comparable<? super E>> implements sorter<E> {
+public class QuickSorter<E extends Comparable<? super E>> implements Sorter<E> {
     private PivotChooser<E> chooser;
 
     /**
